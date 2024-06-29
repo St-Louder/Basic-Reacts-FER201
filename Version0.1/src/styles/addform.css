@@ -1,0 +1,44 @@
+.add-staff-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+  }
+  
+  .add-staff-form h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  .add-staff-form .ant-form-item {
+    margin-bottom: 16px;
+  }
+  
+  .add-staff-form .ant-form-item-label {
+    font-weight: 500;
+  }
+  
+  .add-staff-form .ant-input {
+    height: 40px;
+    border-radius: 4px;
+  }
+  
+  .add-staff-form .ant-btn-primary {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #1890ff;
+    border-color: #1890ff;
+  }
+  
+  .add-staff-form .ant-btn-primary:hover,
+  .add-staff-form .ant-btn-primary:focus {
+    background-color: #40a9ff;
+    border-color: #40a9ff;
+  }
+  

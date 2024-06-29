@@ -1,0 +1,22 @@
+.navbar{
+    background-color: #f8f9fa;
+    padding: 10px;
+    padding-left: 30%;
+}
+.navbar ul{
+    list-style: none;
+    padding: 0 ;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+}
+.navbar li{
+    font-size: 30px;
+    cursor: pointer;
+    padding: 5px 20px;
+}
+.navbar li:hover{
+    border-radius: 10px;
+    background-color: #cf936c;
+
+}
