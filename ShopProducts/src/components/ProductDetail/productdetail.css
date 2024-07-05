@@ -1,0 +1,91 @@
+/* productdetail.css */
+
+.product-detail-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-header {
+    margin-bottom: 20px;
+  }
+  
+  .product-header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .product-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  .product-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .product-price{
+    text-decoration: line-through;
+    color: #ff4d4f;
+  } 
+  .product-current-price {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .save-button, .edit-button, .back-button {
+    background-color: #cc0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .save-button:hover, .edit-button:hover, .back-button:hover {
+    background-color: #cc000092;
+  }
+  
+  .edit-icon {
+    font-size: 18px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  .product-image {
+    max-width: auto; /* Đảm bảo ảnh không bị vượt quá kích thước phần tử cha */
+    height: 50%; /* Tự động tính toán chiều cao dựa trên tỷ lệ của ảnh */
+    display: block; /* Đảm bảo khối ảnh là một phần tử hiển thị, không có khoảng trắng phía dưới */
+    margin: 0 auto; /* Căn giữa ảnh */
+    border-radius: 8px; /* Bo góc cho ảnh */
+    object-fit: contain; /* Đảm bảo ảnh không bị bể và vẫn hiển thị đủ */
+  }  

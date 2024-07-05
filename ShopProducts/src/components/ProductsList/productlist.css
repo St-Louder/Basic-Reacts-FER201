@@ -1,0 +1,125 @@
+.product-list-container {
+  padding: 20px;
+  background-color: #010000;
+  color: white;
+}
+
+.product-list-container h1,
+.product-list-container h2 {
+  text-align: center;
+  color: #fff87cba;
+}
+
+.product-list-container .ant-typography {
+  margin-bottom: 20px; /* Add margin to titles */
+}
+
+.product-pricing {
+  margin-top: 10px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #ff4d4f;
+}
+
+.current-price {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ff4d4f;
+}
+
+.ant-card-meta-title,
+.ant-card-meta-description {
+  color: rgb(6, 0, 0);
+  white-space: normal;
+  overflow: visible;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+.ant-card-hoverable:hover {
+  border-color: #ff4d4f;
+}
+
+.ant-btn-primary {
+  background-color: #ff4d4f;
+  border-color: #ff4d4f;
+}
+
+.ant-btn-primary:hover {
+  background-color: #cc0000;
+  border-color: #cc0000;
+}
+
+.ant-btn-danger {
+  background-color: #ff4d4f;
+  border-color: #ff4d4f;
+}
+
+.ant-btn-danger:hover {
+  background-color: #cc0000;
+  border-color: #cc0000;
+}
+
+.add-product-form {
+  background-color: #912020;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px; /* Add margin to separate from the table */
+}
+
+.add-product-form .ant-form-item {
+  border-radius: 8px;
+}
+
+.ant-input, .ant-btn {
+  border-radius: 8px;
+}
+
+.product-card {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card .ant-card-cover img {
+  height: 150px;
+  object-fit: cover;
+}
+
+.product-card .ant-card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: rgb(255, 246, 246);
+}
+
+.product-card .product-pricing {
+  margin-top: auto;
+}
+
+.add-product-form .ant-form-item-label > label {
+  color: white;
+}
+
+.form-item {
+  width: 100%;
+  color: white;
+}
+
+.ant-typography.ant-typography-1 {
+  margin-top: 20px;
+}
+
+.ant-typography.ant-typography-2 {
+  margin-top: 20px;
+}
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
