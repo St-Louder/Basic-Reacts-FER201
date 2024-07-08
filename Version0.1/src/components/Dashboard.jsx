@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import '../styles/dashboard.css';
 import { useNavigate } from 'react-router-dom';
-import { Button, message } from 'antd';
+import { Table, Button, message, Space } from 'antd';
 import { EyeOutlined, EditOutlined, DeleteOutlined, PlusOutlined } from '@ant-design/icons';
 
 const Dashboard = () => {
@@ -44,26 +44,37 @@ const Dashboard = () => {
     navigate("/addStaff");
   };
 
+  const columns = [
+    {
+      title: 'Name',
+      dataIndex: 'name',
+      key: 'name',
+    },
+    {
+      title: 'Actions',
+      key: 'actions',
+      render: (text, record) => (
+        <Space size="middle">
+          <Button type="primary" onClick={() => handleViewDetail(record.id)} icon={<EyeOutlined />}>
+            View Detail
+          </Button>
+          <Button type="primary" onClick={() => handleUpdate(record.id)} icon={<EditOutlined />}>
+            Update
+          </Button>
+          <Button type="primary" onClick={() => handleDelete(record.id)} icon={<DeleteOutlined />}>
+            Delete
+          </Button>
+        </Space>
+      ),
+    },
+  ];
+
   return (
     <div className='dashboard-form'>
-      <div>
-      <Button type="primary" onClick={handleAddNewStaff} className="add-button"><PlusOutlined className="add-icon" />
-        </Button>
-        {staff.map((member) => (
-          <ul key={member.id}>
-            <li>{member.name}</li>
-            <Button type="primary" onClick={() => handleViewDetail(member.id)} icon={<EyeOutlined />}>
-              View Detail
-            </Button>
-            <Button type="primary" onClick={() => handleUpdate(member.id)} icon={<EditOutlined />}>
-              Update
-            </Button>
-            <Button type="primary" onClick={() => handleDelete(member.id)} icon={<DeleteOutlined />}>
-              Delete
-            </Button>
-          </ul>
-        ))}
-      </div>
+      <Button type="primary" onClick={handleAddNewStaff} className="add-button">
+        <PlusOutlined className="add-icon" /> Add Staff
+      </Button>
+      <Table dataSource={staff} columns={columns} rowKey="id" />
     </div>
   );
 };

@@ -1,59 +1,63 @@
 .dashboard-form {
-    padding: 20px ;
+    padding: 20px;
     margin: 25px auto;
-    max-width: 600px;
+    max-width: 800px; /* Tăng chiều rộng để phù hợp với bảng */
     border: 1px solid #ddd;
     border-radius: 10px;
     background-color: #f9f9f9;
-
 }
+
 .add-button {
-    position: relative; 
-  }
-  
-  .add-icon {
-    position: absolute;
-    right: 12px; 
-    top: 50%;
-    transform: translateY(-50%);
-    padding-left: 100px;
-  }
-
-.dashboard-form ul {
     display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    padding: 0;
-    margin: 0 0 20px 0;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 15px;
-    padding-top: 30px;
-
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-.dashboard-form ul:last-child {
-    border-bottom: none;
+.add-icon {
+    margin-right: 5px;
 }
 
-.dashboard-form li {
-    margin: 10px 0;
+.dashboard-form .ant-table {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.dashboard-form img {
-    max-width: 100px;
-    border-radius: 50%;
+.dashboard-form .ant-table-thead > tr > th {
+    background-color: #cf936c; /* Màu nền cho tiêu đề bảng */
+    color: #fff; /* Màu chữ cho tiêu đề bảng */
+    font-size: 16px;
+    text-align: center;
 }
 
-.dashboard-form button {
-        font-size: 16px;
-        border-radius: 5px;
-        background-color: #cf936c;
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
+.dashboard-form .ant-table-tbody > tr > td {
+    text-align: center;
+    font-size: 14px;
+    word-break: break-word; /* Bắt buộc xuống dòng */
 }
 
-.dashboard-form button:hover {
-        background-color: #eecbb5;
+
+.dashboard-form .ant-btn {
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #cf936c;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard-form .ant-btn:hover {
+    background-color: #eecbb5;
+}
+
+.dashboard-form .ant-btn-primary {
+    background-color: #cf936c;
+    border-color: #cf936c;
+}
+
+.dashboard-form .ant-btn-primary:hover {
+    background-color: #eecbb5;
+    border-color: #eecbb5;
 }
